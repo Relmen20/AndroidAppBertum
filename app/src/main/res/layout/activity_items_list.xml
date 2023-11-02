@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/ico_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toStartOf="@+id/vw_logo_full"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ico_menu" />
+
+        <ImageView
+            android:id="@+id/vw_logo_full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/vw_logo_full" />
+
+
+        <ImageButton
+            android:id="@+id/btFavour"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="32dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintStart_toEndOf="@+id/vw_logo_full"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/fi_rr_heart" />
+
+        <ImageButton
+            android:id="@+id/btCart"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="32dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintStart_toEndOf="@+id/btFavour"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/fi_rr_shopping_cart" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="12dp"
+            android:text="Результат поиска"
+            android:textColor="#000000"
+            android:textFontWeight="950"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vw_logo_full" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="12dp"
+            android:text="Зеркало заднего вида левое\nTRU-GTU-877"
+            android:textColor="#000000"
+            android:textFontWeight="950"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="4dp"
+            android:text="Найдено : "
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/cntVariants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="6dp"
+            android:text="7"
+            android:textColor="#000000"
+            android:textFontWeight="950"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+        <Button
+            android:id="@+id/cntOrig"
+            android:layout_width="126dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="12dp"
+            android:background="#434B53"
+            android:text="ОРИГИНАЛ: 0"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <Button
+            android:id="@+id/cntNonOrig"
+            android:layout_width="126dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="184dp"
+            android:layout_marginTop="12dp"
+            android:background="#FF605C"
+            android:text="НЕОРИГИНАЛ: 0"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <Button
+            android:id="@+id/cntBU"
+            android:layout_width="70dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="12dp"
+            android:background="#6A727A"
+            android:text="Б/У: 0"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cntOrig" />
+
+        <Button
+            android:id="@+id/cntDiscont"
+            android:layout_width="106dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="12dp"
+            android:background="#A6AEB6"
+            android:text="УЦЕНКА: 0"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/cntBU"
+            app:layout_constraintTop_toBottomOf="@+id/cntNonOrig" />
+
+        <Button
+            android:id="@+id/cntAll"
+            android:layout_width="106dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="32dp"
+            android:background="#FFFFFF"
+            android:text="ПОКАЗАТЬ ВСЕ"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toEndOf="@+id/cntDiscont"
+            app:layout_constraintTop_toBottomOf="@+id/cntNonOrig" />
+
+        <ImageView
+            android:id="@+id/search_result_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="228dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vw_logo_full"
+            app:srcCompat="@drawable/search_result_2" />
+
+        <TextView
+            android:id="@+id/titleDetail1"
+            android:layout_width="281dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="148dp"
+            android:text="titleDetail1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@+id/search_result_1"
+            app:layout_constraintTop_toTopOf="@+id/search_result_1"
+            app:lineHeight="26dp" />
+
+        <Button
+            android:id="@+id/cartPrice1"
+            android:layout_width="99dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="288dp"
+            android:layout_marginEnd="16dp"
+            android:background="#FF605C"
+            android:text="В КОРЗИНУ"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/search_result_1"
+            app:layout_constraintTop_toTopOf="@+id/search_result_1" />
+
+        <TextView
+            android:id="@+id/tagPrice1"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="202dp"
+            android:shadowColor="#EF5350"
+            android:text="6530"
+            android:textAlignment="textEnd"
+            android:textColor="#EF5350"
+            android:textFontWeight="950"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/search_result_1"
+            app:layout_constraintStart_toStartOf="@+id/search_result_1"
+            app:layout_constraintTop_toTopOf="@+id/search_result_1" />
+
+        <ImageView
+            android:id="@+id/search_result_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/search_result_1"
+            app:srcCompat="@drawable/search_result_2" />
+
+        <TextView
+            android:id="@+id/titleDetail2"
+            android:layout_width="281dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="148dp"
+            android:text="titleDetail2"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@+id/search_result_2"
+            app:layout_constraintTop_toTopOf="@+id/search_result_2"
+            app:lineHeight="26dp" />
+
+        <Button
+            android:id="@+id/cartPrice2"
+            android:layout_width="99dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="288dp"
+            android:layout_marginEnd="16dp"
+            android:background="#FF605C"
+            android:text="В КОРЗИНУ"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/search_result_2"
+            app:layout_constraintTop_toTopOf="@+id/search_result_2" />
+
+        <TextView
+            android:id="@+id/tagPrice2"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="202dp"
+            android:shadowColor="#EF5350"
+            android:text="5780"
+            android:textAlignment="textEnd"
+            android:textColor="#EF5350"
+            android:textFontWeight="950"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@+id/search_result_2"
+            app:layout_constraintStart_toStartOf="@+id/search_result_2"
+            app:layout_constraintTop_toTopOf="@+id/search_result_2" />
+
+        <ImageView
+            android:id="@+id/search_result_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/search_result_2"
+            app:srcCompat="@drawable/search_result_2" />
+
+        <TextView
+            android:id="@+id/titleDetail3"
+            android:layout_width="281dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="148dp"
+            android:text="titleDetail1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@+id/search_result_3"
+            app:layout_constraintTop_toTopOf="@+id/search_result_3"
+            app:lineHeight="26dp" />
+
+        <Button
+            android:id="@+id/cartPrice3"
+            android:layout_width="99dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="288dp"
+            android:layout_marginEnd="16dp"
+            android:background="#FF605C"
+            android:text="В КОРЗИНУ"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/search_result_3"
+            app:layout_constraintTop_toTopOf="@+id/search_result_3" />
+
+        <TextView
+            android:id="@+id/tagPrice3"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="202dp"
+            android:shadowColor="#EF5350"
+            android:text="4560"
+            android:textAlignment="textEnd"
+            android:textColor="#EF5350"
+            android:textFontWeight="950"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@+id/search_result_3"
+            app:layout_constraintStart_toStartOf="@+id/search_result_3"
+            app:layout_constraintTop_toTopOf="@+id/search_result_3" />
+
+        <ImageButton
+            android:id="@+id/bottomPrices"
+            android:layout_width="339dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/search_result_3"
+            app:srcCompat="@drawable/bottom_prices" />
+
+        <TextView
+            android:id="@+id/cntTotalItems"
+            android:layout_width="35dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="152dp"
+            android:layout_marginTop="8dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/bottomPrices"
+            app:layout_constraintTop_toTopOf="@+id/bottomPrices" />
+
+        <TextView
+            android:id="@+id/sumRepairs"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="22dp"
+            android:text="0"
+            android:textAlignment="textEnd"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/bottomPrices"
+            app:layout_constraintTop_toTopOf="@+id/bottomPrices" />
+
+        <TextView
+            android:id="@+id/sumRepairsWork"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="57dp"
+            android:text="0"
+            android:textAlignment="textEnd"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/bottomPrices"
+            app:layout_constraintTop_toTopOf="@+id/bottomPrices" />
+
+        <TextView
+            android:id="@+id/jsonOut"
+            android:layout_width="162dp"
+            android:layout_height="94dp"
+            android:layout_marginTop="84dp"
+            android:layout_marginEnd="20dp"
+            android:text="TextView"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

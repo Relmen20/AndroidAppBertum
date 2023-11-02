@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ico_menu"
+        android:layout_width="35dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/vw_logo_full"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ico_menu" />
+
+    <ImageView
+        android:id="@+id/vw_logo_full"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vw_logo_full" />
+
+
+    <ImageView
+        android:id="@+id/ico_dtp2"
+        android:layout_width="53dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/vw_logo_full"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ico_dtp2" />
+
+
+    <ImageView
+        android:id="@+id/picked_detail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frame_layout"
+        app:srcCompat="@drawable/search_result_2" />
+
+
+    <Button
+        android:id="@+id/cartPrice1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="308dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="8dp"
+        android:background="#FF605C"
+        android:text="ПЕРЕЙТИ К ТОВАРУ"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/picked_detail"
+        app:layout_constraintEnd_toEndOf="@+id/picked_detail"
+        app:layout_constraintHorizontal_bias="0.846"
+        app:layout_constraintStart_toStartOf="@+id/picked_detail"
+        app:layout_constraintTop_toTopOf="@+id/picked_detail"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vw_logo_full"
+        app:layout_constraintVertical_bias="0.042">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutSurface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".PolygonLayout">
+        </RelativeLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="131dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="88dp"
+        app:layout_constraintBottom_toTopOf="@+id/cartPrice1"
+        app:layout_constraintEnd_toEndOf="@+id/picked_detail" />
+
+    <!--    <RelativeLayout-->
+<!--        android:id="@+id/relativeLayoutSurface"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_marginStart="4dp"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:layout_marginEnd="4dp"-->
+<!--        android:layout_marginBottom="400dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/vw_logo_full"-->
+<!--        app:layout_constraintVertical_bias="0.042"-->
+<!--        tools:context=".PolygonLayout" >-->
+<!--    </RelativeLayout>-->
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ico_menu"
+        android:layout_width="35dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ico_menu" />
+
+    <ImageView
+        android:id="@+id/vw_logo_full"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vw_logo_full" />
+
+
+    <ImageView
+        android:id="@+id/ico_dtp2"
+        android:layout_width="53dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="13dp"
+        app:layout_constraintStart_toEndOf="@+id/vw_logo_full"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ico_dtp2" />
+
+    <ImageButton
+        android:id="@+id/block_add_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_x="34dp"
+        android:layout_y="212dp"
+        android:background="@android:color/transparent"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vw_logo_full"
+        app:srcCompat="@drawable/block_grey" />
+
+    <Button
+        android:id="@+id/selectCamera"
+        android:layout_width="145dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="168dp"
+        android:autoText="false"
+        android:background="#FE605C"
+        android:capitalize="none"
+        android:text="Сделать фото"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/block_add_photo"
+        app:layout_constraintTop_toTopOf="@+id/block_add_photo" />
+
+    <ImageButton
+        android:id="@+id/btnStartDisbld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/block_add_photo"
+        android:layout_marginTop="16dp"
+        android:layout_x="7dp"
+        android:layout_y="148dp"
+        android:background="@android:color/transparent"
+        android:text="Post Data"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/block_add_photo"
+        app:srcCompat="@drawable/block_start_send_photo_grey" />
+
+    <ImageButton
+        android:id="@+id/idBtnPostData2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/block_add_photo"
+        android:layout_marginTop="16dp"
+        android:layout_x="7dp"
+        android:layout_y="148dp"
+        android:background="@android:color/transparent"
+        android:text="Post Data"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/block_add_photo"
+        app:srcCompat="@drawable/block_start_send_photo_red2" />
+
+    <!--<ProgressBar
+        android:id="@+id/idPBLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:visibility="gone" />
+-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/carOnMain"-->
+    <!--        android:layout_width="318dp"-->
+    <!--        android:layout_height="134dp"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.494"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/idBtnPostData"-->
+    <!--        app:srcCompat="@drawable/car_on_main" />-->
+
+    <ImageView
+        android:id="@+id/m3d_car_front_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/m3d_car_real" />
+
+
+    <ImageView
+        android:id="@+id/m3d_detail_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="63dp"
+        app:layout_constraintStart_toStartOf="@+id/m3d_car_front_right"
+        app:layout_constraintTop_toTopOf="@+id/m3d_car_front_right"
+        app:srcCompat="@drawable/m3d_real_detail_1" />
+
+    <ImageView
+        android:id="@+id/m3d_detail_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="38dp"
+        app:layout_constraintStart_toStartOf="@+id/m3d_car_front_right"
+        app:layout_constraintTop_toTopOf="@+id/m3d_car_front_right"
+        app:srcCompat="@drawable/m3d_real_detail_2" />
+
+    <TextView
+        android:id="@+id/cntPhoto"
+        android:layout_width="28dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/btnStartDisbld"
+        app:layout_constraintTop_toBottomOf="@+id/block_add_photo" />
+
+    <ImageButton
+        android:id="@+id/bottomPrices"
+        android:layout_width="339dp"
+        android:layout_height="53dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bottom_prices" />
+
+    <TextView
+        android:id="@+id/cntTotalItems"
+        android:layout_width="35dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/bottomPrices"
+        app:layout_constraintTop_toTopOf="@+id/bottomPrices" />
+
+    <TextView
+        android:id="@+id/cntVideo"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/btnStartDisbld"
+        app:layout_constraintTop_toBottomOf="@+id/block_add_photo" />
+
+    <TextView
+        android:id="@+id/sumRepairs"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="22dp"
+        android:text="0"
+        android:textAlignment="textEnd"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/bottomPrices"
+        app:layout_constraintTop_toTopOf="@+id/bottomPrices" />
+
+    <TextView
+        android:id="@+id/sumRepairsWork"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="57dp"
+        android:text="0"
+        android:textAlignment="textEnd"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/bottomPrices"
+        app:layout_constraintTop_toTopOf="@+id/bottomPrices" />
+
+    <TextView
+        android:id="@+id/selectFileMedia"
+        android:layout_width="328dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Нажмите сюда\nдля добавления\nфотографии из галереи"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/block_add_photo"
+        app:layout_constraintTop_toTopOf="@+id/block_add_photo"
+        app:lineHeight="28dp" />
+
+    <ImageButton
+        android:id="@+id/starImageButtonDisable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="@+id/m3d_car_front_right"
+        app:layout_constraintTop_toTopOf="@+id/m3d_car_front_right"
+        app:srcCompat="@android:drawable/btn_star" />
+
+    <ImageButton
+        android:id="@+id/starImageButtonEnable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/m3d_car_front_right"
+        app:layout_constraintTop_toTopOf="@+id/m3d_car_front_right"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+
+</android.support.constraint.ConstraintLayout>

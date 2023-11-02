@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Bertum1</string>
+    <string name="msg_photo_added">Фотография добавлена</string>
+    <string name="msg_detail_selected">Выбрана деталь - %1$s</string>
+</resources>
